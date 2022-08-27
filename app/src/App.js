@@ -1,22 +1,21 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload KEKW.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <div className="main-content">
+          <div className="search-bar">
+            <span className="inp-summoner-name-search-bar">
+              Add a search bar here
+            </span>
+            <button className="btn-summoner-name-search">Search</button>
+          </div>
+          <div>
+            TODO: Table goes here
+          </div>
+        </div>
       </header>
     </div>
   );
