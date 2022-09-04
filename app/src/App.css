@@ -6,7 +6,7 @@
   border: 1px solid black;
 }
 
-.btn-summoner-name-search{ 
+.btn-summoner-name-search { 
   background: lightgray;
 	color: inherit;
 	border: none;
@@ -25,4 +25,38 @@
   width: 50%;
   border: 3px solid rgb(68, 156, 156);
   padding: 10px;
+}
+
+.table-matches {
+  width: 100%
+}
+
+.table-header {
+  text-align: left;
+}
+
+.table-col {
+  word-wrap: break-word;
+  max-width: 100px;
+  padding: 8px;
+}
+
+.table-row {
+  border-bottom: 1px solid black;
+}
+
+.last-games {
+  text-align: center;
+  margin: auto;
+  width: 50%;
+}
+
+.table-matches {
+  padding-top: 20px;
+}
+
+.no-matches {
+  color: darkgray;
+  margin: auto;
+  text-align: center;
 }
