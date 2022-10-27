@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import getSummonerByName from './api/SummonerApi';
 import './App.css';
 
 function App() {
@@ -6,12 +7,10 @@ function App() {
   const [matches, setMatches] = useState([]);
 
   function search(e) {
-    console.log('searching...');
     e.preventDefault();
 
-    // TODO: get from riot api + move this to a services file
-    fetch('http://shibe.online/api/shibes?count=3')
-      .then((response) => response.json())
+    getSummonerByName(searchValue)
+      .then((response) => console.log('anything'))
       .then((e) => {
         setMatches(e);
       }).catch((error) => {
